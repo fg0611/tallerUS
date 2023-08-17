@@ -23,7 +23,7 @@ const coins3 = [1, 2, 3, 4, 5];
 const coins4 = [1, 10, 3, 11, 6, 15];
 const coins5 = [1, 1, 1, 1];
 
-// O(nlogn)
+// 2nd problem - sol 1
 const calChange = (coinsArr) => {
   if (!coinsArr?.length) throw "coins array can't be empty";
   coinsArr = coinsArr.sort(function (a, b) {
@@ -43,7 +43,7 @@ const calChange = (coinsArr) => {
 // next line should be uncommented only if method calChange() will be tested, otherwise in line 38 the forEach() method will stop the Node's exceution  
 // calChange(coins2);
 
-// O(1)
+// 2nd problem - sol 2
 function calChangeO1(coinsArr) {
   if (!coinsArr?.length) throw "coins array can't be empty";
   coinsArr = coinsArr.sort(function (a, b) {
